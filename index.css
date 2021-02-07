@@ -1,7 +1,10 @@
 #mainp
 {
   text-align: center;
-  vertical-align: middle;
+  margin: 0;
+  position: absolute;               
+  top: 50%;
+  transform: translate(0, -50%)
   font-size: 15;
 }
 html
