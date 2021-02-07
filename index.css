@@ -1,5 +1,9 @@
 #mainp:hover
 {
-  display: none;
+  text-align: center;
 
+}
+html
+{
+  background-color: #89c9f9;  
 }
