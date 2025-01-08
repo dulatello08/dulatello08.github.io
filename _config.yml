@@ -28,7 +28,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: dulatello08
 github_username:  dulatello08
-repository: 'https://github.com/dulatello08/dulatello08.github.io'
+repository: 'dulatello08/dulatello08.github.io'
 
 
 # Build settings
