@@ -304,6 +304,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages (~> 232)
   jekyll-feed (~> 0.12)
+  jekyll-remote-theme
 
 BUNDLED WITH
    2.6.2

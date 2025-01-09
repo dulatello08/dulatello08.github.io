@@ -1,0 +1,60 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+$gradient-start: rgba(0, 255, 135, 0.5);
+$gradient-end: rgba(0, 209, 255, 0.5);
+$pattern-url: "https://www.transparenttextures.com/patterns/cubes.png";
+
+.site-footer {
+  background: linear-gradient(45deg, $gradient-start 25%, $gradient-end 75%), url($pattern-url);
+  background-size: cover; // Ensures the pattern fills the footer
+  color: white;
+  padding: 40px 0;
+  font-size: 14px;
+  text-align: center;
+  position: relative;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    p {
+      margin: 0;
+      font-weight: bold;
+      font-size: 16px;
+
+      a {
+        color: #ffffff;
+        text-decoration: underline;
+
+        &:hover {
+          color: #fffa90; // Subtle hover effect
+        }
+      }
+    }
+
+    .social-links {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 30px;
+
+        i {
+          transition: transform 0.3s ease;
+
+          &:hover {
+            transform: scale(1.2); // Slight zoom on hover
+          }
+        }
+      }
+    }
+  }
+}
