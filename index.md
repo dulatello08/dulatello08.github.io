@@ -4,13 +4,19 @@
 
 layout: default
 ---
-HI!!!
 
-<ul>
+<ul class="posts-list">
   {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      <p>{{ post.excerpt }}</p>
+    <li class="post-item">
+      <a href="{{ post.url | relative_url }}" class="post-link">
+        {% if post.image %}
+          <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="post-image">
+        {% endif %}
+        <div class="post-content">
+          <h2 class="post-title">{{ post.title }}</h2>
+          <p class="post-excerpt">{{ post.excerpt }}</p>
+        </div>
+      </a>
     </li>
   {% endfor %}
 </ul>
