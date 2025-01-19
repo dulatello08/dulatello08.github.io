@@ -14,7 +14,9 @@ layout: default
         {% endif %}
         <div class="post-content">
           <h2 class="post-title">{{ post.title }}</h2>
-          <p class="post-excerpt">{{ post.excerpt }}</p>
+          {% if post.description %}
+            <p class="post-description">{{ post.description }}</p>
+          {% endif %}
         </div>
       </a>
     </li>
